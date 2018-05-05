@@ -9,16 +9,16 @@ a {
 }
 /* Wrap/Container */
 .wrap {
-    max-width: 1130px;
+    max-width: 1180px;
     margin: 0 auto;
     padding: 0 10px;
 }
 
 /* Main Header */
 #mainheader {
+    min-width: 1105px;
     padding: 20px;
-    background-color: white;
-    width: 100%;
+    /* background-color: white; */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -43,6 +43,10 @@ a {
     font-size: 0.8em;
 }
 
+#nav-main #pull {
+    display: none;
+}
+
 /* Calendar */
 #calendar-title {
     font-size: 1.5em;
@@ -54,30 +58,24 @@ a {
 .content__list {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-gap: 2em;  
-    padding: 0.5em 1em;
-}
-
-.calendar-tabpane__item,
-.content__item {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+    /* grid-gap: 2em;   */
+    grid-column-gap: 2em;
 }
 
 .calendar-tabpane__list {
-    margin-bottom: 1em;
     background-color: white;
     border: 1px solid #CCC;
+    min-width: 1105px;
 }
 
 .calendar-tabpane__item {
     margin: 0 auto;
     color: #888;
+    padding: 0.8em 2em;
 }
 
 .content__item {
-    
+    padding: 20px 10px;
 }
 
 .content-thumb {
@@ -98,8 +96,59 @@ a {
 
 .content__text .title {
     color: black;
+    width: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .content__text .chapter {
     color: #8fa6c0;
+}
+
+/* Today */
+.calendar-tabpane .today {
+    border-bottom: 2px solid #985965;
+    color: black;
+    font-weight: bold;
+}
+
+.content .today {
+    background: white;
+    border-right: 1px solid #985965;
+    border-left: 1px solid #985965;
+}
+
+.content .today-last {
+    border-bottom: 1px solid #985965;
+}
+
+/* TEN Day */
+.calendar-tabpane .tenday {
+    border-bottom: 2px solid #9d9fb1;
+}
+
+.content .tenday {
+    background: white;
+    border-right: 1px solid #9d9fb1;
+    border-left: 1px solid #9d9fb1;
+}
+
+.content .tenday-last {
+    border-bottom: 1px solid #9d9fb1;
+}
+
+/* Breakpoint 1- 1126 - tabpane starts moving */
+
+/* Breakpoint 2 - 800 - Navbar */
+@media screen and (max-width: 800px) {
+    #nav-main #pull {
+        display: inline;
+        margin: 0 1em;
+        font-size: 0.8em;
+    }
+
+    .nav-main__item a {
+        display: none;
+    }
 }
