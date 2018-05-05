@@ -1,0 +1,105 @@
+body { 
+    background-color: #eff1f4;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+/* Wrap/Container */
+.wrap {
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Main Header */
+#mainheader {
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#mainheader #mainheader-logo {
+    /* float: left; */
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #985965;
+}
+
+/* Navbar */
+#nav-main {
+    /* float: left; */
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#nav-main .nav-main__list .nav-main__item {
+    display: inline;
+    margin: 0 1em;
+    font-size: 0.8em;
+}
+
+/* Calendar */
+#calendar-title {
+    font-size: 1.5em;
+    color: #555;
+    margin: 1em 0;
+}
+
+.calendar-tabpane__list,
+.content__list {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 2em;  
+    padding: 0.5em 1em;
+}
+
+.calendar-tabpane__item,
+.content__item {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.calendar-tabpane__list {
+    margin-bottom: 1em;
+    background-color: white;
+    border: 1px solid #CCC;
+}
+
+.calendar-tabpane__item {
+    margin: 0 auto;
+    color: #888;
+}
+
+.content__item {
+    
+}
+
+.content-thumb {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    border: 1px solid #CCC;
+}
+
+.content__text {
+    font-size: 0.9em;
+}
+
+.content__text a {
+    display: block;
+    margin-top: 0.5em;
+}
+
+.content__text .title {
+    color: black;
+}
+
+.content__text .chapter {
+    color: #8fa6c0;
+}
