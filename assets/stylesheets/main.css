@@ -30,6 +30,11 @@ a {
     color: #985965;
 }
 
+/* Main */
+#main {
+    margin-bottom: 2em;
+}
+
 /* Navbar */
 #nav-main {
     /* float: left; */
